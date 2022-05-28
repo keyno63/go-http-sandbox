@@ -6,5 +6,5 @@ build:
 getgolangci:
 	cd tools && go install github.com/golangci/golangci-lint/cmd/golangci-lint
 
-lint:
+lint: getgolangci
 	golangci-lint run
